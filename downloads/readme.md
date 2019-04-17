@@ -1,1 +1,1 @@
-This is where the download scripts store songs by default.
+This is a comfy location to store your downloads (downloadFarm.sh uses this place as well.)
