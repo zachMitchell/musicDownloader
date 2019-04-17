@@ -6,14 +6,12 @@
 #Stations themselves are retrieved through an .m3u file. (See python script below for more info)
 url=$(./getM3uUrlByTitle.py $1 $2);
 
-echo $url;
-
-sleepTime=300;
+sleepTime=1800;
 if [ $3 ]; then sleepTime=$3;fi
 
 outName=out;
 if [ $4 ]; then outName=$4;fi
 
-if [ $url ]; then wget -O $outName.mpeg $url &
+if [ $url ]; then wget -O $outName.mpeg $url -q&
 sleep $sleepTime && kill $(jobs -p);
 fi
