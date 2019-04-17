@@ -1,0 +1,1 @@
+This is where the download scripts store songs by default.

@@ -11,5 +11,5 @@ shift;
 sleepTime=$1
 
 while [ $1 ]; do
-    ./downloadSong.sh $sourceFile $1 $sleepTime $1 & shift;
+    ./downloadSong.sh $sourceFile $1 $sleepTime ./downloads/$1 & shift;
 done
