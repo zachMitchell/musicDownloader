@@ -12,6 +12,6 @@ if [ $3 ]; then sleepTime=$3;fi
 outName=out;
 if [ $4 ]; then outName=$4;fi
 
-if [ $url ]; then wget -O $outName.mpeg $url -q&
+if [ $url ]; then wget -O $outName.mp3 $url -q&
 sleep $sleepTime && kill $(jobs -p);
 fi

@@ -10,7 +10,7 @@ import sys,re
 try:
     fileSrc = sys.argv[1]
 except IndexError:
-    print "\033[0;31mPlease specify the path for the .m3u file\033[0;0m"
+    print("\033[0;31mPlease specify the path for the .m3u file\033[0;0m")
     exit()
 key = ''
 if len(sys.argv) > 2:
